@@ -1,0 +1,19 @@
+table {
+	padding: 30px;
+}
+
+td {
+	padding: 50px;
+
+}
+
+tr {
+	padding: 50px;
+
+}
+
+
+
+.NewColour {
+	background-color: orange;
+}
