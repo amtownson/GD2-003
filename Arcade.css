@@ -6157,6 +6157,7 @@ body {
 	display: flex;
 	margin-top: 1200px;
 	margin-left: 1500px;
+	padding-bottom: 1000px;
 }
 
 
@@ -6165,6 +6166,7 @@ body {
 	display: flex;
 	margin-top: 1200px;
 	margin-left: 3800px;
+	padding-bottom: 1000px;
 }
 
 
@@ -6174,12 +6176,14 @@ body {
 	margin-top: 50px;
 	margin-left: 6000px;
 	padding-right:200px;
+	padding-bottom: 1000px;
 }
 
 .Pinball1Block {
 	position: relative;
 	width: 23em;
 	height: 39em;
+	
 }
 
 
