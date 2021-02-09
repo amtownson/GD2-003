@@ -2,14 +2,7 @@ var PB1IN = document.getElementById("PlayerBlockIN1");
 var PB2IN = document.getElementById("PlayerBlockIN2");
 var player = localStorage.getItem("player");
 var arcadeBody = document.getElementById("arcadeBody");
-var	keyCodes = { left: 37, leftA: 65, up: 38, upW: 87, right: 39, rightD: 68, down: 40, downS: 83, enter: 13 },
-	keys = [];
-var arcadex = parseInt(arcadeBody.style.left, 10);
-var arcadey = parseInt(arcadeBody.style.top, 10);
-var winWidMar = window.innerWidth - 45;
-var winHeiMar = window.innerHeight - 410;
-var WinHalfx = window.innerWidth /2;
-var WinHalfy = window.innerHeight /2;
+
 
 window.addEventListener("load", () => {
 	PB1IN.style.position = "absolute";
@@ -33,6 +26,9 @@ window.addEventListener("load", () => {
 
 function MoveIN1 (){
 	
+	var	keyCodes = { left: 37, leftA: 65, up: 38, upW: 87, right: 39, rightD: 68, down: 40, downS: 83, enter: 13 },
+			keys = [];
+
 	window.addEventListener("keydown", function (e) {
 	    keys[e.keyCode] = true;
 });
@@ -43,8 +39,14 @@ function MoveIN1 (){
 	
 	setInterval(function () {
 	  
-	    var x = parseInt(PB1IN.style.left, 10),
-	        y = parseInt(PB1IN.style.top, 10);
+	    var x = parseInt(PB1IN.style.left, 10);
+	    var y = parseInt(PB1IN.style.top, 10);
+		var	arcadex = parseInt(arcadeBody.style.left, 10);
+		var	arcadey = parseInt(arcadeBody.style.top, 10);
+		var	winWidMar = window.innerWidth - 45;
+		var	winHeiMar = window.innerHeight - 410;
+		var	WinHalfx = window.innerWidth /2;
+		var	WinHalfy = window.innerHeight /2;
 
 	    
 	       // moving
@@ -89,6 +91,9 @@ function MoveIN1 (){
 
 function MoveIN2 (){
 
+ 	var	keyCodes = { left: 37, leftA: 65, up: 38, upW: 87, right: 39, rightD: 68, down: 40, downS: 83, enter: 13 },
+		keys = [];
+
 	window.addEventListener("keydown", function (e) {
 	    keys[e.keyCode] = true;
 
@@ -100,8 +105,14 @@ function MoveIN2 (){
 	
 	setInterval(function () {
 	    
-	    var x = parseInt(PB2IN.style.left, 10),
-	        y = parseInt(PB2IN.style.top, 10);
+	    var x = parseInt(PB2IN.style.left, 10);
+	    var    y = parseInt(PB2IN.style.top, 10);
+		var	arcadex = parseInt(arcadeBody.style.left, 10);
+		var	arcadey = parseInt(arcadeBody.style.top, 10);
+		var	winWidMar = window.innerWidth - 45;
+		var	winHeiMar = window.innerHeight - 410;
+		var	WinHalfx = window.innerWidth /2;
+		var	WinHalfy = window.innerHeight /2;
 	    
 	       // moving
 	    
