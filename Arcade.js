@@ -20,6 +20,7 @@ PB1.addEventListener("click", P1Start);
 PB2.addEventListener("click", P2Start);	
 
 function P1Start(){
+	PB1.removeEventListener("click", P1Start);
 	PB2.classList.replace("PlayerBlock2", "Hide");
 	false;
 	Move1();
@@ -30,6 +31,7 @@ function P1Start(){
 };
 
 function P2Start(){
+	PB2.removeEventListener("click", P2Start);
 	PB1.classList.replace("PlayerBlock1", "Hide");
 	false;
 	Move2();
