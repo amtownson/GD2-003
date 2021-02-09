@@ -1253,24 +1253,17 @@ font-size: 3px;
 }
 
 #Controls1{
-	display: none;
+	display:none;
 	animation-name: Appear;
 	animation-duration: 4s;
 	animation-timing-function: ease-in;
 }
 
-#Controls2{
-	display: none;
-	left:495px;
-	animation-name: Appear;
-	animation-duration: 4s;
-	animation-timing-function: ease-in;
-}
 
 .ControlBlock{
 	position:absolute;
-	top: 825px;
-	left: 190px;
+	top: 409px;
+	left: 715px;
 	height: 12em;
 	width: 50em;
 }

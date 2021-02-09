@@ -36,7 +36,7 @@ function P2Start(){
 	door.style.display = "block";
 	Select.style.display = "none";
 	GameTitle.style.display = "block";
-	controls2.style.display = "block";
+	controls1.style.display = "block";
 };
 
 window.addEventListener("load", () => {
@@ -146,9 +146,9 @@ function Move2 (){
 	    PB2.style.top = y + "px";
 
 	    if (x<0 || x>0) {
-	    	controls2.style.display = "none";
+	    	controls1.style.display = "none";
 	    }else if(y<0 || y>0){
-	    	controls2.style.display = "none";
+	    	controls1.style.display = "none";
 	    }
 
 		if (x< -640){
