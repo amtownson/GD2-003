@@ -1,0 +1,122 @@
+body{
+	font-family: helvetica;
+	color: white;
+	margin: 0;
+	padding:0;
+}
+
+h1 {
+margin-left: 10%;
+margin-top: 3.5%;
+font-weight: lighter;
+font-size: 36pt;	
+max-width: 1200px;
+
+}
+
+h2 {
+font-weight: lighter;
+font-size: 36pt;	
+margin-left: 10%;
+max-width: 1200px;
+}
+
+h3 {
+font-weight: lighter;
+font-size: 24pt;	
+margin-left: 10%;
+max-width: 600px;
+}
+
+h4 {
+	margin-left: 10%;
+	max-width: 600px;
+	font-weight: bolder;	
+	font-size: 12pt;
+	line-height: 25px;	
+
+}
+
+p {
+	margin-left: 10%;
+	max-width: 600px;
+	font-weight: lighter;	
+	font-size: 12pt;
+	line-height: 25px;	
+}
+
+
+
+
+.ArticleSections {
+	display: grid;
+	grid-template-columns: 100;
+	grid-template-rows: repeat(6, 16.66vh);
+/*		minmax(1390px, 90vh) 
+		minmax(1840px, 90vh) 
+		minmax(1780px, 90vh)
+		minmax(2430px, 90vh)
+		minmax(1980px, 90vh)
+		minmax(2200px, 90vh)*/;
+}
+
+
+#box1{
+	grid-row-start: 1;
+	grid-row-end: 1;
+	background-color: red;
+}
+
+#intro{
+	display: none;
+}
+
+#box2{
+	grid-row-start: 2;
+	grid-row-end: 2;
+	background-color: orange;
+}
+
+#ricki{
+	display: none;
+}
+
+#box3{
+	grid-row-start: 3;
+	grid-row-end: 3;
+	background-color: yellow;	
+}
+
+#veronica{
+	display: none;
+}
+
+#box4{
+	grid-row-start: 4;
+	grid-row-end: 4;	
+	background-color: green;
+}
+
+#patrick{
+	display: none;
+}
+
+#box5{
+	grid-row-start: 5;
+	grid-row-end: 5;	
+	background-color: blue;
+}
+
+#florent{
+	display: none;
+}
+
+#box6{
+	grid-row-start: 6;
+	grid-row-end: 6;
+	background-color: violet;
+}
+
+#chloe{
+	display: none;
+}

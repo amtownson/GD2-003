@@ -74,10 +74,11 @@ function MoveIN1 (){
 
 	    	    // exit 
 
-		if (x>-125 && x<300 && y> -57 && y<150 && keys[keyCodes.enter]){
+		if (x > -100 && x < 170 && y > -200 && y < 170 && keys[keyCodes.enter]){
 		window.location.href = "index.html"};
 
-
+		if (x > 3400 && x < 3802 && y > 400 && y < 900 && keys[keyCodes.enter]){
+		window.location.href = "Bookshelf.html"};
 
 	    PB1IN.style.left = x + "px";
 	    PB1IN.style.top = y + "px";
@@ -145,9 +146,14 @@ function MoveIN2 (){
 
 	   // exit 
 
-		if (x>-125 && x<300 && y> -57 && y<150 && keys[keyCodes.enter]){
-		window.location.href = "index.html"
-		console.log("working")};
+		if (x > -100 && x < 170 && y > -200 && y < 170 && keys[keyCodes.enter]){
+		window.location.href = "index.html"};
+
+		if (x > 3400 && x < 3802 && y > 400 && y < 900 && keys[keyCodes.enter]){
+		window.location.href = "Bookshelf.html"
+		// console.log("working");
+
+	};
 
 
 		}, 1/30);
