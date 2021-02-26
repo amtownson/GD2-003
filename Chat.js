@@ -1,7 +1,7 @@
 console.log("Chat");
 
-var ws_uri = "ws://amtownson.github.io/GD2-003/Chat.html";
-var websocket = new Websocket(ws_uri);
+var ws_uri = "wss://amtownson.github.io/GD2-003/Chat.html";
+var websocket = new WebSocket(ws_uri);
 
 websocket.onopen =function(event) {
 	MessageAdd('<div class="message green">You have entered the chat room.</div>')
