@@ -12,7 +12,7 @@ websocket.onclose = function(event) {
 };
 
 websocket.onerror = function(event) {
-	MessageAdd('div class="message red">Connection to chat failed.</div>');
+	MessageAdd('<div class="message red">Connection to chat failed.</div>');
 };
 
 websocket.onmessage = function(event) {
