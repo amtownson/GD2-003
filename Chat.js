@@ -26,8 +26,8 @@ websocket.onmessage = function(event) {
 document.getElementById("chatForm").addEventListener("submit", function(event) {
 	event.preventDefault();
 
-	var message_element = document.getElementsByTagName("input")[0];
-	var message = message_element.value;
+	var messageElement = document.getElementsByTagName("input")[0];
+	var message = messageElement.value;
 
 	if (message.toString().length) {
 		var username = localStorage.getItem("username");
@@ -39,7 +39,7 @@ document.getElementById("chatForm").addEventListener("submit", function(event) {
 		};
 
 		websocket.send(JSON.stringify(data));
-		message_element.value = "";
+		messageElement.value = "";
 	}
 }, false);
 
@@ -58,8 +58,8 @@ function Username() {
 Username();
 
 function MessageAdd(message) {
-    var chat_messages = document.getElementById("chat-messages");
+    var chatMessages = document.getElementById("chatMessages");
 
-    chat_messages.insertAdjacentHTML("beforeend", message);
-    chat_messages.scrollTop = chat_messages.scrollHeight;
+    chatMessages.insertAdjacentHTML("beforeend", message);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
 };
