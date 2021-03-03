@@ -1,0 +1,23 @@
+{
+  "name": "gd2-003",
+  "version": "1.0.0",
+  "description": "",
+  "main": "socketServer.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amtownson/GD2-003.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amtownson/GD2-003/issues"
+  },
+  "homepage": "https://github.com/amtownson/GD2-003#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "socket.io": "^3.1.2"
+  }
+}
