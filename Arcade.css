@@ -954,6 +954,9 @@ display: none;
 	to {opacity: 75%}
 }		
 
+.Hide {
+	display: none;}
+
 #PlayerBlockIN1{
 display: ;
 position: absolute;
