@@ -51,20 +51,20 @@ function MoveIN1 (){
 	    
 	       // moving
 	    
-   		 if (x> -57 && keys[keyCodes.left] && x>=WinHalfx || x> -57 && keys[keyCodes.leftA] && x>=WinHalfx) 
+   		 if (x> -57 &&  keys[keyCodes.left] && x>=WinHalfx || x> -57 && keys[keyCodes.leftA] && x>=WinHalfx) 
 	        {arcadex +=1;
 	    	x -=1;
 	    }else if (x> -57 && keys[keyCodes.left] || x> -57 && keys[keyCodes.leftA])
 	        {x -=1;};
 
-	    if (x<4100 && keys[keyCodes.right] && x>=WinHalfx || x<4100 && keys[keyCodes.rightD] && x>=WinHalfx) 
+	    if (x<4600 && keys[keyCodes.right] && x>=WinHalfx || x<4600 && keys[keyCodes.rightD] && x>=WinHalfx) 
 	    	{arcadex -=1;
 	    	x +=1;
-	    }else if (x<4100 && keys[keyCodes.right]|| x<4100 && keys[keyCodes.rightD]) 
+	    }else if (x<4600 && keys[keyCodes.right]|| x<4600 && keys[keyCodes.rightD]) 
 	        {x +=1;};
 	
 
-	    if (y> -125 && keys[keyCodes.up] || y> -125 && keys[keyCodes.upW])
+	    if (y> -85 && keys[keyCodes.up] || y> -85 && keys[keyCodes.upW])
 	        {arcadey+=1;
 	    	y -=1;}
 	  
@@ -77,8 +77,73 @@ function MoveIN1 (){
 		if (x > -100 && x < 170 && y > -200 && y < 170 && keys[keyCodes.enter]){
 		window.location.href = "index.html"};
 
+			    // exit2 
+
+		if (x > 4300 && x < 4600 && y > -200 && y < 170 && keys[keyCodes.enter]){
+		window.location.href = "index.html"};
+
+				//bookshelf
+
 		if (x > 3400 && x < 3802 && y > 400 && y < 900 && keys[keyCodes.enter]){
 		window.location.href = "Bookshelf.html"};
+
+				//bar
+
+		if (x > 225 && x < 900 && y > -200 && y < 280 && keys[keyCodes.enter]){
+		window.location.href = "Chat/public/index.html"};
+
+				//Game1
+
+		if (x > 1050 && x < 1350 && y > -200 && y < 170 && keys[keyCodes.enter]){
+		window.location.href = "Game/startGame.html"};
+
+				//Game2
+
+		if (x > 1360 && x < 1650 && y > -200 && y < 170 && keys[keyCodes.enter]){
+		window.location.href = "Game/startGame.html"};
+
+				//Game3
+
+		if (x > 1660 && x < 2000 && y > -200 && y < 170 && keys[keyCodes.enter]){
+		window.location.href = "Game/startGame.html"};
+
+				//Game4
+
+		if (x > 2850 && x < 3150 && y > -200 && y < 170 && keys[keyCodes.enter]){
+		window.location.href = "Game/startGame.html"};
+
+				//Game5
+
+		if (x > 3160 && x < 3450 && y > -200 && y < 170 && keys[keyCodes.enter]){
+		window.location.href = "Game/startGame.html"};
+
+				//Game6
+
+		if (x > 3460 && x < 3800 && y > -200 && y < 170 && keys[keyCodes.enter]){
+		window.location.href = "Game/startGame.html"};
+
+
+				//Game1 lower
+
+		if (x > 1050 && x < 1350 && y > 400 && y < 900 && keys[keyCodes.enter]){
+		window.location.href = "Game/startGame.html"};
+
+				//Game2 lower
+
+		if (x > 1360 && x < 1650 && y > 400 && y < 900 && keys[keyCodes.enter]){
+		window.location.href = "Game/startGame.html"};
+
+				//Game3 lower
+
+		if (x > 1660 && x < 2000 && y > 400 && y < 900 && keys[keyCodes.enter]){
+		window.location.href = "Game/startGame.html"};
+
+				//Game4 lower
+
+		if (x > 2850 && x < 3350 && y > 400 && y < 900 && keys[keyCodes.enter]){
+		window.location.href = "Game/startGame.html"};
+
+
 
 	    PB1IN.style.left = x + "px";
 	    PB1IN.style.top = y + "px";
@@ -123,10 +188,10 @@ function MoveIN2 (){
 	    }else if (x> -57 && keys[keyCodes.left] || x> -57 && keys[keyCodes.leftA])
 	        {x -=1;};
 
-	    if (x<4100 && keys[keyCodes.right] && x>=WinHalfx || x<4100 && keys[keyCodes.rightD] && x>=WinHalfx) 
+	    if (x<4600 && keys[keyCodes.right] && x>=WinHalfx || x<4600 && keys[keyCodes.rightD] && x>=WinHalfx) 
 	    	{arcadex -=1;
 	    	x +=1;
-	    }else if (x<4100 && keys[keyCodes.right]|| x<4100 && keys[keyCodes.rightD]) 
+	    }else if (x<4600 && keys[keyCodes.right]|| x<4600 && keys[keyCodes.rightD]) 
 	        {x +=1;};
 	
 
@@ -144,16 +209,79 @@ function MoveIN2 (){
 	    arcadeBody.style.left = arcadex + "px";
 	    arcadeBody.style.top = arcadey + "px";
 
-	   // exit 
+	    	    // exit 
 
 		if (x > -100 && x < 170 && y > -200 && y < 170 && keys[keyCodes.enter]){
 		window.location.href = "index.html"};
 
-		if (x > 3400 && x < 3802 && y > 400 && y < 900 && keys[keyCodes.enter]){
-		window.location.href = "Bookshelf.html"
-		// console.log("working");
+			    // exit2 
 
-	};
+		if (x > 4300 && x < 4600 && y > -200 && y < 170 && keys[keyCodes.enter]){
+		window.location.href = "index.html"};
+
+				//bookshelf
+
+		if (x > 3400 && x < 3802 && y > 400 && y < 900 && keys[keyCodes.enter]){
+		window.location.href = "Bookshelf.html"};
+
+				//bar
+
+		if (x > 225 && x < 900 && y > -200 && y < 280 && keys[keyCodes.enter]){
+		window.location.href = "Chat/public/index.html"};
+
+				//Game1
+
+		if (x > 1050 && x < 1350 && y > -200 && y < 170 && keys[keyCodes.enter]){
+		window.location.href = "Game/startGame.html"};
+
+				//Game2
+
+		if (x > 1360 && x < 1650 && y > -200 && y < 170 && keys[keyCodes.enter]){
+		window.location.href = "Game/startGame.html"};
+
+				//Game3
+
+		if (x > 1660 && x < 2000 && y > -200 && y < 170 && keys[keyCodes.enter]){
+		window.location.href = "Game/startGame.html"};
+
+				//Game4
+
+		if (x > 2850 && x < 3150 && y > -200 && y < 170 && keys[keyCodes.enter]){
+		window.location.href = "Game/startGame.html"};
+
+				//Game5
+
+		if (x > 3160 && x < 3450 && y > -200 && y < 170 && keys[keyCodes.enter]){
+		window.location.href = "Game/startGame.html"};
+
+				//Game6
+
+		if (x > 3460 && x < 3800 && y > -200 && y < 170 && keys[keyCodes.enter]){
+		window.location.href = "Game/startGame.html"};
+
+
+				//Game1 lower
+
+		if (x > 1050 && x < 1350 && y > 400 && y < 900 && keys[keyCodes.enter]){
+		window.location.href = "Game/startGame.html"};
+
+				//Game2 lower
+
+		if (x > 1360 && x < 1650 && y > 400 && y < 900 && keys[keyCodes.enter]){
+		window.location.href = "Game/startGame.html"};
+
+				//Game3 lower
+
+		if (x > 1660 && x < 2000 && y > 400 && y < 900 && keys[keyCodes.enter]){
+		window.location.href = "Game/startGame.html"};
+
+				//Game4 lower
+
+		if (x > 2850 && x < 3350 && y > 400 && y < 900 && keys[keyCodes.enter]){
+		window.location.href = "Game/startGame.html"};
+
+
+
 
 
 		}, 1/30);
