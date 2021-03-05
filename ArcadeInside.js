@@ -195,7 +195,7 @@ function MoveIN2 (){
 	        {x +=1;};
 	
 
-	    if (y> -125 && keys[keyCodes.up] || y> -125 && keys[keyCodes.upW])
+	    if (y> -85 && keys[keyCodes.up] || y> -85 && keys[keyCodes.upW])
 	        {arcadey+=1;
 	    	y -=1;}
 	  
