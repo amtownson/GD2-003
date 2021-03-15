@@ -227,7 +227,7 @@ function MoveIN2 (){
 				//bar
 
 		if (x > 225 && x < 900 && y > -200 && y < 280 && keys[keyCodes.enter]){
-		window.location.href = "Chat/public/index.html"};
+		window.location.href = "https://quarantine-connect.glitch.me/"};
 
 				//Game1
 
