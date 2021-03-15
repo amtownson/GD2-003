@@ -1550,6 +1550,7 @@ font-size: 3px;
 }
 
 .ExitBlock {
+	cursor:pointer;
 	position: absolute;
 	width:12em;
 	height:4em;
@@ -1574,6 +1575,7 @@ font-size: 3px;
 }
 
 .Exit {
+
 	width:1em;
 	height:1em;
 	background-color: red;
@@ -1623,6 +1625,7 @@ font-size: 3px;
 
 
 .Door{
+	cursor:pointer;
 	position: absolute;
 	width: 12em;
 	height:25em;

@@ -21,6 +21,12 @@ var	keyCodes = { left: 37, leftA: 65, up: 38, upW: 87, right: 39, rightD: 68, do
 PB1.addEventListener("click", P1Start);
 PB2.addEventListener("click", P2Start);	
 
+door.addEventListener("click", enterClick);
+
+function enterClick(){
+	window.location.href = "Arcade.html"
+}
+
 function P1Start(){
 	PB1.removeEventListener("click", P1Start);
 	PB2.classList.replace("PlayerBlock2", "Hide");

@@ -2,6 +2,16 @@ var PB1IN = document.getElementById("PlayerBlockIN1");
 var PB2IN = document.getElementById("PlayerBlockIN2");
 var player = localStorage.getItem("player");
 var arcadeBody = document.getElementById("arcadeBody");
+var exit1 = document.getElementById("exit1");
+var exitSign = document.getElementById("exitSign");
+
+
+exit1.addEventListener("click", exitClick);
+exitSign.addEventListener("click", exitClick);
+
+function exitClick(){
+	window.location.href = "index.html"
+}
 
 
 window.addEventListener("load", () => {
@@ -47,9 +57,19 @@ function MoveIN1 (){
 		var	winHeiMar = window.innerHeight - 410;
 		var	WinHalfx = window.innerWidth /2;
 		var	WinHalfy = window.innerHeight /2;
+		var urlArray = [
+    	"https://hwajn.github.io/testing/",
+    	"https://rhewryk.github.io/Project-2/",
+   		"https://sissichen108.github.io/GD2-003/index.html",
+   		"https://chael66.github.io/GD2-003/web/space1.html",
+   		"https://lucy3751.github.io/GD2-003/ramp/assignment2before.html#rampBottomFloorPattern4",
+   		"https://yuyifan325.github.io/GD2-003/"
+		];
+
 
 	    
 	       // moving
+
 	    
    		 if (x> -57 &&  keys[keyCodes.left] && x>=WinHalfx || x> -57 && keys[keyCodes.leftA] && x>=WinHalfx) 
 	        {arcadex +=1;
@@ -80,17 +100,57 @@ function MoveIN1 (){
 			    // exit2 
 
 		if (x > 4300 && x < 4600 && y > -200 && y < 170 && keys[keyCodes.enter]){
-		window.location.href = "index.html"};
+		randomUrl();
+		keys[keyCodes.enter]=false;
+		keys[keyCodes.left] = false;
+		keys[keyCodes.leftA] = false;
+		keys[keyCodes.up] = false;
+		keys[keyCodes.upW] = false;
+		keys[keyCodes.right] = false;
+		keys[keyCodes.rightD] = false;
+		keys[keyCodes.down] = false;
+		keys[keyCodes.downS] = false;
+		keys[keyCodes.enter]  = false;
+		};
+
+		// go to a random link in an array: https://stackoverflow.com/questions/40274250/random-html-link-selector-from-group-of-links
+
+		function randomUrl() {
+    	var randomNumber = Math.floor(Math.random() * urlArray.length);
+   		var newUrl = urlArray[randomNumber];
+    	window.open(newUrl);};
 
 				//bookshelf
 
 		if (x > 3400 && x < 3802 && y > 400 && y < 900 && keys[keyCodes.enter]){
-		window.location.href = "Bookshelf.html"};
+		window.open("Bookshelf.html")
+		keys[keyCodes.enter]=false;
+		keys[keyCodes.left] = false;
+		keys[keyCodes.leftA] = false;
+		keys[keyCodes.up] = false;
+		keys[keyCodes.upW] = false;
+		keys[keyCodes.right] = false;
+		keys[keyCodes.rightD] = false;
+		keys[keyCodes.down] = false;
+		keys[keyCodes.downS] = false;
+		keys[keyCodes.enter]  = false;
+		};
 
 				//bar
 
 		if (x > 225 && x < 900 && y > -200 && y < 280 && keys[keyCodes.enter]){
-		window.location.href = "https://quarantine-connect.glitch.me/"};
+		window.open("https://quarantine-connect.glitch.me/");
+		keys[keyCodes.enter]=false;
+		keys[keyCodes.left] = false;
+		keys[keyCodes.leftA] = false;
+		keys[keyCodes.up] = false;
+		keys[keyCodes.upW] = false;
+		keys[keyCodes.right] = false;
+		keys[keyCodes.rightD] = false;
+		keys[keyCodes.down] = false;
+		keys[keyCodes.downS] = false;
+		keys[keyCodes.enter]  = false;
+		};
 
 				//Game1
 
@@ -179,6 +239,14 @@ function MoveIN2 (){
 		var	winHeiMar = window.innerHeight - 410;
 		var	WinHalfx = window.innerWidth /2;
 		var	WinHalfy = window.innerHeight /2;
+		var urlArray = [
+    	"https://hwajn.github.io/testing/",
+    	"https://rhewryk.github.io/Project-2/",
+   		"https://sissichen108.github.io/GD2-003/index.html",
+   		"https://chael66.github.io/GD2-003/web/space1.html",
+   		"https://lucy3751.github.io/GD2-003/ramp/assignment2before.html#rampBottomFloorPattern4",
+   		"https://yuyifan325.github.io/GD2-003/"
+		];
 	    
 	       // moving
 	    
@@ -212,22 +280,62 @@ function MoveIN2 (){
 	    	    // exit 
 
 		if (x > -100 && x < 170 && y > -200 && y < 170 && keys[keyCodes.enter]){
-		window.location.href = "index.html"};
+		window.location.href = "index.html";};
 
 			    // exit2 
 
 		if (x > 4300 && x < 4600 && y > -200 && y < 170 && keys[keyCodes.enter]){
-		window.location.href = "index.html"};
+		randomUrl();
+		keys[keyCodes.enter]=false;
+		keys[keyCodes.left] = false;
+		keys[keyCodes.leftA] = false;
+		keys[keyCodes.up] = false;
+		keys[keyCodes.upW] = false;
+		keys[keyCodes.right] = false;
+		keys[keyCodes.rightD] = false;
+		keys[keyCodes.down] = false;
+		keys[keyCodes.downS] = false;
+		keys[keyCodes.enter]  = false;
+		};
+
+		// go to a random link in an array: https://stackoverflow.com/questions/40274250/random-html-link-selector-from-group-of-links
+
+		function randomUrl() {
+    	var randomNumber = Math.floor(Math.random() * urlArray.length);
+   		var newUrl = urlArray[randomNumber];
+    	window.open(newUrl);};
 
 				//bookshelf
 
 		if (x > 3400 && x < 3802 && y > 400 && y < 900 && keys[keyCodes.enter]){
-		window.location.href = "Bookshelf.html"};
+		window.open("Bookshelf.html");
+		keys[keyCodes.enter]=false;
+		keys[keyCodes.left] = false;
+		keys[keyCodes.leftA] = false;
+		keys[keyCodes.up] = false;
+		keys[keyCodes.upW] = false;
+		keys[keyCodes.right] = false;
+		keys[keyCodes.rightD] = false;
+		keys[keyCodes.down] = false;
+		keys[keyCodes.downS] = false;
+		keys[keyCodes.enter]  = false;
+		};
 
 				//bar
 
 		if (x > 225 && x < 900 && y > -200 && y < 280 && keys[keyCodes.enter]){
-		window.location.href = "https://quarantine-connect.glitch.me/"};
+		window.open("https://quarantine-connect.glitch.me/");
+		keys[keyCodes.enter]=false;
+		keys[keyCodes.left] = false;
+		keys[keyCodes.leftA] = false;
+		keys[keyCodes.up] = false;
+		keys[keyCodes.upW] = false;
+		keys[keyCodes.right] = false;
+		keys[keyCodes.rightD] = false;
+		keys[keyCodes.down] = false;
+		keys[keyCodes.downS] = false;
+		keys[keyCodes.enter]  = false;
+		};
 
 				//Game1
 
