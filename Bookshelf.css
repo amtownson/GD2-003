@@ -1,125 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Rubik+Mono+One&display=swap');
+
 body{
-	font-family: helvetica;
-	color: white;
 	margin: 0;
 	padding:0;
 	overflow-x: hidden;
+	overflow-y: scroll;
+
+
 }
 
-::-webkit-scrollbar {
-display: none;
-}
+
+
+
 
 h1 {
-position:relative;
-margin-left: 10%;
-padding-top: 3.5%;
-font-weight: lighter;
-font-size: 36pt;	
-max-width: 1200px;
-
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 36pt;
+	padding-top:5vh;
+	padding-left:10vw;
+	padding-right:10vw;
+	margin:0;
 }
 
 h2 {
-font-weight: lighter;
-font-size: 36pt;	
-margin-left: 10%;
-max-width: 1200px;
+	font-family: 'Rubik Mono One', sans-serif;
+	font-weight:bold;
+	font-size: 36pt;
+	margin-top:0;	
+	padding-left:10vw;
+	padding-right:10vw;
+	padding-top:7vh;
+	max-width:1100px;
 }
 
 h3 {
-font-weight: lighter;
-font-size: 24pt;	
-margin-left: 10%;
-max-width: 600px;
+	text-align:justify;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:bold;
+	font-size: 24pt;	
+	padding-left:10vw;
+	padding-right:10vw;
+	max-width: 650px;
+	line-height: 45px;	
 }
 
 h4 {
-	margin-left: 10%;
-	max-width: 600px;
+	text-align:justify;
+	font-family: 'Open Sans', sans-serif;
+	padding-left:10vw;
+	padding-right:10vw;
+	max-width: 650px;
 	font-weight: bolder;	
-	font-size: 12pt;
-	line-height: 25px;	
+	font-size: 14pt;
+	line-height: 30px;	
 
 }
 
 p {
-	margin-left: 10%;
-	max-width: 600px;
+	font-family: 'Open Sans', sans-serif;
+	text-align:justify;
+	padding-left:10vw;
+	padding-right:10vw;
+	max-width: 650px;
 	font-weight: lighter;	
-	font-size: 12pt;
-	line-height: 25px;	
+	font-size: 14pt;
+	line-height: 30px;	
+}
+
+a {
+	font-family: 'Open Sans', sans-serif;
+	text-align:justify;
+	margin-left: 10%;
+	max-width: 650px;
+	padding-bottom:20px;
+}
+
+.title{
+	display:;
+}
+
+.title2{
+	display:;
+}
+
+.title3{
+	display:;
+}
+.title4{
+	display:;
+}
+.title5{
+	display:;
+}
+.title6{
+	display:;
 }
 
 
 
 
-.ArticleSections {
-	min-height:102vh;
-	max-height:700vh;
+
+
+
+@keyframes grow {
+  from {/*height: 16.66vh;*/ color:white;}
+  to {/*height: 20vh;*/ color:black;}
 }
-
-
 
 
 #box1{
 	width:100vw;
-	height:17vh;
+	height:16.66vh;
 	background-color: red;
-
+	cursor:pointer; 
+	color:red;
+	animation:;
+	animation-direction:alternate;
 }
+
 
 #intro{
 	display: none;
-	position:relative;
+	color:black;
+	margin:0;
+	height: 100vh;
+	background-color:red;
+	overflow:auto;
 }
 
 #box2{
+	display:;
 	width:100vw;
-	height:17vh;
+	height:16.66vh;
 	background-color: orange;
+	cursor:pointer; 
+	color:orange;
+
 }
+
 
 #ricki{
 	display: none;
+	color:black;
+	margin:0;
+	height: 100vh;
+	background-color:orange;
+	overflow:auto;
 }
 
 #box3{
+	display:;
 	width:100vw;
-	height:17vh;
+	height:16.66vh;
+	cursor:pointer; 
 	background-color: yellow;	
+	color:yellow;	
 }
+
 
 #veronica{
 	display: none;
+	color:black;
+	margin:0;
+	height: 100vh;
+	background-color:yellow;
+	overflow:auto;
 }
 
 #box4{
+	display:;
 	width:100vw;
-	height:17vh;
+	height:16.66vh;
+	cursor:pointer; 
 	background-color: green;
+	color:green;
 }
+
 
 #patrick{
 	display: none;
+	color:black;
+	margin:0;
+	height: 100vh;
+	background-color:green;
+	overflow:auto;
 }
 
 #box5{
+	display:;
 	width:100vw;
-	height:17vh;
+	height:16.66vh;
+	cursor:pointer; 
 	background-color: blue;
+	color:blue;
 }
+
 
 #florent{
 	display: none;
+	display: none;
+	color:black;
+	margin:0;
+	height: 100vh;
+	background-color:blue;
+	overflow:auto;
 }
 
 #box6{
+	display:;
 	width:100vw;
-	height:17vh;
+	height:16.70vh;
+	cursor:pointer; 
 	background-color: violet;
+	color:violet;
 }
+
 
 #chloe{
 	display: none;
+	color:black;
+	margin:0;
+	height: 100vh;
+	background-color:violet;
+	overflow:auto;
+}
+
+/*Learned this in lecture with Ali Qadeer*/
+
+@media (max-width:1000px)
+{
+
+h1{
+	color:white;
+}
+
+h1, h2{
+	font-size: 24pt;
+}
+
+h3 {
+	font-size: 18pt;
+}
+
+h4, p, a {
+	font-size: 12pt;
+	line-height:25px;
+}
+
+#intro {
+	height:100vh;
+}
+
+#ricki {
+	height:100vh;
+}
+
+#veronica {
+	height:100vh;
+}
+
+#patrick {
+	height:100vh;
+}
+
+#florent {
+	height:100vh;
+}
+
+#chloe {
+	height:100vh;
+}
+
+}
+
+@media (max-width:1000px) and (max-height:600px)
+{
+
+h1{
+	color:white;
+}
+
+h1, h2{
+	font-size: 16pt;
+}
+
+h3 {
+	font-size: 12pt;
+	line-height: 25px;
+}
+
+h4, p, a {
+	font-size: 8pt;
+	line-height:20px;
+}
+
+#intro {
+	height:100vh;
+}
+
+#ricki {
+	height:100vh;
+}
+
+#veronica {
+	height:100vh;
+}
+
+#patrick {
+	height:100vh;
+}
+
+#florent {
+	height:100vh;
+}
+
+#chloe {
+	height:100vh;
+}
+
+}
+
+@media (max-height:400px)
+{
+
+h1{
+	color:white;
+}
+
+h1, h2{
+	font-size: 16pt;
+}
+
+h3 {
+	font-size: 12pt;
+	line-height: 25px;
+}
+
+h4, p, a {
+	font-size: 8pt;
+	line-height:20px;
+}
+
+#intro {
+	height:100vh;
+}
+
+#ricki {
+	height:100vh;
+}
+
+#veronica {
+	height:100vh;
+}
+
+#patrick {
+	height:100vh;
+}
+
+#florent {
+	height:100vh;
+}
+
+#chloe {
+	height:100vh;
+}
+
+
 }
