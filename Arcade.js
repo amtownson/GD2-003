@@ -1,3 +1,5 @@
+// I learned most of this when I made a game last year using stackoverflow and w3schools 
+ 
 console.log("Arcade");
 
 // START SCREEN

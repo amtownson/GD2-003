@@ -1,5 +1,9 @@
 // MESSAGES 
 
+//I Followed this tutorial to build the chat:https://socket.io/get-started/chat
+
+//Ali Qadeer helped too!! 
+
 var socket = io();
 
 var messages = document.getElementById('messages');

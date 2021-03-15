@@ -16,6 +16,10 @@ body {
 
 }
 
+
+/*Drawing with box shadow: https://www.youtube.com/watch?v=LjlHcmEclFE&t=876s&ab_channel=freeCodeCamp.org*/
+
+
 .SignBlock {
 	position: absolute;
 	width:81em;
@@ -949,8 +953,10 @@ display: none;
 
 ;}
 
+/*Animation: W3 schools*/
+
 @keyframes Glow {
-	form {opacity: 100%}
+	from {opacity: 100%}
 	to {opacity: 75%}
 }		
 
@@ -2074,6 +2080,8 @@ font-size: 3px;
 
 }
 
+/*Animatin colour wheel: https://danielcwilson.com/blog/2019/09/huedini/*/
+
 @keyframes hue {
   0% {
     filter: hue-rotate(0deg);
@@ -2082,6 +2090,8 @@ font-size: 3px;
     filter: hue-rotate(360deg);
   }
 }
+
+/*Ali Qadeer Helped with creating variables*/
 
 #Purple{--box-shadow-colour: #CC99C9;}
 
